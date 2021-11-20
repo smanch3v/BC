@@ -27,6 +27,7 @@ function App() {
     coin.name.toLowerCase().includes(search.toLowerCase())
   );
 
+
   return (
     <div className="coin-app">
       <div className="coin-search">
@@ -49,6 +50,8 @@ function App() {
             symbol={coin.symbol}
             marketcap={coin.total_volume}
             volume={coin.market_cap}
+            priceChange={coin.price_change_percentage_24h}
+            marketcap={coin.total_volume}
           ></Coin>
         );
       })}
